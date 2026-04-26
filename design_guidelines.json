@@ -1,0 +1,125 @@
+{
+  "theme": "dark",
+  "archetype": "4 (Swiss & High-Contrast)",
+  "emotional_tone": "Authoritative, precise, vigilant, unambiguous",
+  "colors": {
+    "background": {
+      "default": "#0A0A0A",
+      "surface": "#141414",
+      "surface_hover": "#1F1F1F",
+      "surface_active": "#262626"
+    },
+    "border": {
+      "default": "#262626",
+      "subtle": "#1F1F1F",
+      "strong": "#404040",
+      "focus": "#FFFFFF"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#A3A3A3",
+      "muted": "#737373",
+      "inverse": "#000000"
+    },
+    "brand": {
+      "primary": "#FFFFFF",
+      "primary_hover": "#E5E5E5",
+      "primary_foreground": "#000000"
+    },
+    "status": {
+      "critical": "#FF3B30",
+      "critical_bg": "rgba(255, 59, 48, 0.1)",
+      "warning": "#FF9F0A",
+      "warning_bg": "rgba(255, 159, 10, 0.1)",
+      "success": "#30D158",
+      "success_bg": "rgba(48, 209, 88, 0.1)",
+      "info": "#0A84FF",
+      "info_bg": "rgba(10, 132, 255, 0.1)"
+    }
+  },
+  "typography": {
+    "font_families": {
+      "heading": "Cabinet Grotesk, sans-serif",
+      "body": "IBM Plex Sans, sans-serif",
+      "mono": "IBM Plex Mono, monospace"
+    },
+    "sizing": {
+      "h1": "text-4xl tracking-tight font-medium",
+      "h2": "text-2xl tracking-tight font-medium",
+      "h3": "text-xl tracking-tight font-medium",
+      "h4": "text-lg tracking-tight font-medium",
+      "body": "text-sm leading-relaxed",
+      "small": "text-xs uppercase tracking-[0.05em]",
+      "data_large": "text-3xl tabular-nums font-mono font-medium",
+      "data_regular": "text-sm tabular-nums font-mono"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "High data density, strict grid adherence, 1px structural borders.",
+    "container_padding": "p-6 lg:p-8",
+    "widget_padding": "p-4",
+    "gap_tight": "gap-4",
+    "gap_wide": "gap-8",
+    "border_radius": "rounded-none",
+    "grid_system": "Control Room Grid: grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-px bg-[#262626] border border-[#262626]"
+  },
+  "surface_strategies": {
+    "dashboard_cards": "Flat background (#141414), 1px solid border (#262626), zero shadow. On hover, background shifts to #1F1F1F.",
+    "navigation_sidebar": "Solid black (#0A0A0A) background, right border (#262626). Dense item spacing.",
+    "ai_copilot_panel": "Uses 'Tracing Beam' or subtle inner glow border (#0A84FF/20) to distinguish from standard data panels.",
+    "modals": "Solid surface (#141414), sharp 1px border (#404040), stark backdrop (bg-black/80)."
+  },
+  "components": {
+    "buttons": "Sharp corners. Primary: white bg, black text. Secondary: transparent bg, 1px border (#404040), white text. Destructive: red bg.",
+    "badges": "Rectangular (rounded-none). Text: xs uppercase. Colors mapped to status with 10% opacity bg and solid text.",
+    "tables": "Dense. No vertical borders. 1px bottom border (#262626) per row. Header text is uppercase, muted, small. Numbers use tabular-nums font-mono.",
+    "charts": "Recharts with matching grid lines (#262626). Use purely status colors or monochrome gradients. No generic multi-colored pie charts.",
+    "icons": "Phosphor Icons (@phosphor-icons/react). Weight: 'regular' for dense UI, 'fill' for active state.",
+    "inputs": "Shadcn based. Flat background, sharp borders. Focus state: border-white ring-0."
+  },
+  "motion_and_interactions": {
+    "hover_states": "Instant color shifts. No bouncy physics. Professional and snappy.",
+    "transitions": "transition-colors duration-150 ease-in-out",
+    "data_loading": "Monospace number scrambling or sharp skeleton blocks (bg-[#1F1F1F]). No soft pulsing."
+  },
+  "accessibility": {
+    "contrast": "Strict APCA compliance. Muted text must be at least #737373 on #0A0A0A.",
+    "focus_rings": "2px solid white offset by 2px (black bg in between).",
+    "motion": "Respects prefers-reduced-motion."
+  },
+  "media": {
+    "image_urls": {
+      "user_avatar": {
+        "url": "https://images.unsplash.com/photo-1584940120505-117038d90b05?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwyfHxjb3Jwb3JhdGUlMjBleGVjdXRpdmUlMjBwb3J0cmFpdCUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3NzcwMzIxOTZ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Professional CFO avatar image",
+        "category": "avatar"
+      },
+      "brand_logo": {
+        "url": "https://images.unsplash.com/photo-1581087659886-647ed5526c5d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGdlb21ldHJpYyUyMHdoaXRlJTIwbG9nbyUyMGljb258ZW58MHx8fHwxNzc3MDMyMTk2fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract geometric white logo for the app header",
+        "category": "logo"
+      },
+      "ai_evidence_graph": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/4fd184db-4074-4364-afb7-1bd99a1a0cde/images/fe1dfcf68dc1d566ca72bb2c3b2e908cb6409f80afd112c90ed1036c3bf850bf.png",
+        "description": "Abstract dark mode data network graph for AI Copilot/Evidence graph background",
+        "category": "background"
+      },
+      "command_center_bg": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/4fd184db-4074-4364-afb7-1bd99a1a0cde/images/99ac18b59ab3563e46ce9dfb04795a9074300d9bf924f7a31b08a2a2a5c3686b.png",
+        "description": "Subtle dark texture for login or overarching command center backdrop",
+        "category": "background"
+      }
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install required fonts: Cabinet Grotesk, IBM Plex Sans, and IBM Plex Mono via Google Fonts or standard imports.",
+    "Install Phosphor Icons: yarn add @phosphor-icons/react",
+    "Install Recharts for data visualization: yarn add recharts",
+    "Use Shadcn UI extensively but strip out rounded corners (`rounded-none` or `rounded-sm`) to maintain the rigorous brutalist finance vibe.",
+    "The layout should feature a fixed left sidebar (Navigation) and a scrollable main content area. Data grids must utilize 1px borders matching `#262626`.",
+    "Data metrics should always use tabular-nums and the Mono font.",
+    "Never use soft UI gradients or generic shadows. Rely on sharp contrast and 1px borders for hierarchy.",
+    "Include a `data-testid` on all interactive buttons, links, table rows, and form elements.",
+    "For the AI Copilot chat interface, differentiate it with monospace citations and a slightly elevated background (`#141414`), omitting generic 'chat bubbles' for a more terminal-like log view."
+  ]
+}
