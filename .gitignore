@@ -35,6 +35,7 @@ dist
 .env.*
 frontend/.env
 
+
 *token.json*
 *credentials.json*
 
